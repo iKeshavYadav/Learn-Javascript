@@ -76,5 +76,42 @@ console.log(num7)
 console.log(num7 + 2n) //adding in BigInt
 */
 
+//string
+/*
+let user= 'keshav yadav'
+console.log(user)
+
+let firstName= 'keshav'
+let lastName= 'yadav'
+let user1= firstName + ' ' + lastName //comma in between for space
+console.log(user1)
+
+let user3= "keshav yadav \"laptop\"" //escape character, ends specl meaning of quotes
+let user4= 'ke\tshav \nyadav' // '\t' for tab, '\n' for new line
+console.log(user4)
+*/
+
+//boolean -> either TRUE OR FALSE
+/*
+let num= 5 < 6 //true
+console.log(num)
+
+// null
+
+let user= null //var value is null
+console.log(user)
+console.log(typeof user) //object
+
+//undefined
+
+let user1  //var value not defined
+console.log(user1)
+
+
+console.log(5 / 'keshav') //NaN -> not a number
+console.log(typeof (5 / 'keshav')) //number
+//NaN is not number but it's type is Number
+*/
+
 
 
