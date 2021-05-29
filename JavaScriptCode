@@ -208,6 +208,57 @@ let result= 4**3 //64
 console.log(result)
 */
 
+//relational operators
+//-> compare diffrent values
+// a < b -> a is less then b
+// a > b -> a is greater then b
+/*
+console.log(5 > 4) //true
+console.log(5 < 4) //false
+
+let x= 5
+let y= 5
+
+console.log(x <= y) //true
+
+console.log("Pen" > "Book") //true -> it compares each char from start
+console.log("Pen" > "Pencil") //false
+//ASCII value -> every char has unique value, i.e A=1, B=2
+*/
+/*
+console.log("2" > 1) //true -> 1st will convert int to num
+console.log("2" > 3) // false
+console.log(3 == 3) //true -> (==)equality operator, (=) assigning operator
+console.log("3" == 3) //true
+console.log("3" === 3) // false
+// (==) checks only data not type
+// (===) checks both data and type, recom to use for equality comparision
+*/
+
+//logical operator
+//chart -> https://images.app.goo.gl/men36LWTG4WPsQ8d9
+// And (&), OR (|), Not (!)
+//Mathmatical form -> JS form 
+//dot (.) -> Ampersand (&)
+//plus (+) -> pipe (|)
+// tilde (~) -> exclamation (!)
+
+/*
+let x= 7, y=8, z=9
+
+//let result= x < y && x < z // (&) represent bitwise operator to diffrentiate use (&&) for Ampersand
+let result = x < y || x < z // true, OR operator
+
+console.log(result)
+*/
+/*
+let x=7, y=2, z=5
+let result= x < y || x < z //false
+let n= !result
+
+console.log(result, n) //false true
+*/
+
 
 
 
