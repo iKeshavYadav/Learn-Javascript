@@ -384,6 +384,37 @@ console.log(`My name is
 Keshav Yadav`);
 */
 
+//loops in JS
+/*
+//while loop
+let i= 1 //initialize
+
+
+while(i<=5) //condition
+{
+  console.log("Hlo",i)
+  i++  //increment
+  
+  //i-- //decrement
+  //i=i+1
+}
+*/
+
+//Do while loop
+/*
+let i= 1;
+
+do{
+  console.log("Hlo", i)
+  i++
+}while(i<=5)
+
+
+//while loop -> 1st check the condition, then execute block
+// Do while loop -> 1st execute the block, then check condition 
+*/
+
+
 
 
 
