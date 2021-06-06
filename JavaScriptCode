@@ -527,6 +527,42 @@ console.log(alien[input]) //keshav
 */
 
 
+//complex object, delete property
+
+//complex obj -> obj inside obj
+/*
+let alien= {
+  name: 'keshav',
+  tech: 'JS',
+  laptop: {
+    cpu:'i7',
+    ram: 4,
+    brand:'ASUS',
+  }
+};
+console.log(alien)
+console.log(alien.name) //fetch value
+console.log(alien.laptop)
+console.log(alien.laptop.brand)
+console.log(alien.name.length); //length of string
+*/
+/*
+let alien= {
+  name1: 'keshav',
+  tech: 'JS',
+  laptop1: {
+    cpu:'i7',
+    ram: 4,
+    brand:'ASUS',
+  }
+}
+//console.log(alien.laptop.brand.length) //error
+//console.log(alien.name?.length); //undefined -> if not sure the property is avilable put '?' will not give error
+
+delete alien.tech //delete value
+console.log(alien)
+*/
+
 
 
 
