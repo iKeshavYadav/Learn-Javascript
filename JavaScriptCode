@@ -182,7 +182,7 @@ let num= 4
 //num= num+2 //6
 //num+=2 //6
 //num++ //5 -> increment by 1, called post increment
-//++num !/5 -> increment by 1, called pre increment
+//++num //5 -> increment by 1, called pre increment
 num-- //3 -> decrement
 console.log(num)
 */
