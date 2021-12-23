@@ -590,3 +590,24 @@ function greet() //defining function
 
 greet(); //calling a function
 */
+
+//Function return and passing
+
+/*
+function greet(){
+    return "Hello World !" //this will return the data to its function were called
+}
+
+let str = greet()
+console.log(str)
+*/
+
+/*
+function greet(user){
+    return `Hello ${user} !`
+}
+
+let user = "Keshav";
+let str = greet(user);
+console.log(str);
+*/
