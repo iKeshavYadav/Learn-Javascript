@@ -371,3 +371,16 @@ switch(day){
 
 console.log("Good Morning!")
 */
+
+/*
+//template literal
+
+let num1= 9;
+let num2= 4;
+let result= num1+num2;
+
+//console.log("the addition of " + num1 + " and " + num2 + " is " + result);
+console.log(`the addition of ${num1} and ${num2} is ${result}`); //backtick -> (``)
+console.log(`My name is
+Keshav Yadav`);
+*/
