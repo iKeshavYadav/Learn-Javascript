@@ -384,3 +384,120 @@ console.log(`the addition of ${num1} and ${num2} is ${result}`); //backtick -> (
 console.log(`My name is
 Keshav Yadav`);
 */
+
+//loops in JS
+/*
+//while loop
+let i= 1 //initialize
+
+
+while(i<=5) //condition
+{
+  console.log("Hlo",i)
+  i++  //increment
+  
+  //i-- //decrement
+  //i=i+1
+}
+*/
+
+//Do while loop
+/*
+let i= 1;
+
+do{
+  console.log("Hlo", i)
+  i++
+}while(i<=5)
+
+
+//while loop -> 1st check the condition, then execute block
+// Do while loop -> 1st execute the block, then check condition 
+*/
+
+//for loop
+
+/*
+for(i=1;i<=5;i++){
+  console.log("hlo")
+}
+*/
+//or
+/*
+let i= 1
+for(;i<=5;i++){
+  console.log("hlo")
+}
+*/
+//or
+/*
+let i= 1
+for(;i<=5;){
+  console.log("hlo")
+  i++
+}
+*/
+
+//nested for loop -> loop inside loop 
+/*
+for(let i=1;i<=5;i++){
+  console.log("hi",i)
+  
+  for(let j=1;j<=5;j++)
+    console.log("hello",j)
+}
+*/
+
+//for vs while loop
+
+/*
+//for
+
+for(let i=1;i<=100;i++){
+  if(i%3===0)
+    console.log(i);
+};
+*/
+
+//while
+/*
+let num=123456;
+
+console.log(num%10); //6
+num= parseInt(num/10) //12345
+console.log(num);
+
+console.log(num%10); //5
+num= parseInt(num/10) //1234
+console.log(num);
+
+console.log(num%10); //4
+num= parseInt(num/10) //123
+console.log(num);
+*/
+//or
+
+/*
+let num=123456;
+
+while(num>0){
+  console.log(num%10);
+  num= parseInt(num/10)
+  console.log(num);
+}
+*/
+//result
+/*
+6
+12345
+5
+1234
+4
+123
+3
+12
+2
+1
+1
+0
+*/
