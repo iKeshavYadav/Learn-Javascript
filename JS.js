@@ -76,3 +76,186 @@ let num7= 475337633655279864374374n //putting 'n' keeps original num -> 47533763
 console.log(num7)
 console.log(num7 + 2n) //adding in BigInt
 */
+
+//string
+/*
+let user= 'keshav yadav'
+console.log(user)
+
+let firstName= 'keshav'
+let lastName= 'yadav'
+let user1= firstName + ' ' + lastName //comma in between for space
+console.log(user1)
+
+let user3= "keshav yadav \"laptop\"" //escape character, ends specl meaning of quotes
+let user4= 'ke\tshav \nyadav' // '\t' for tab, '\n' for new line
+console.log(user4)
+*/
+
+//boolean -> either TRUE OR FALSE
+/*
+let num= 5 < 6 //true
+console.log(num)
+
+// null
+
+let user= null //var value is null
+console.log(user)
+console.log(typeof user) //object
+
+//undefined
+
+let user1  //var value not defined
+console.log(user1)
+
+
+console.log(5 / 'keshav') //NaN -> not a number
+console.log(typeof (5 / 'keshav')) //number
+//NaN is not number but it's type is Number
+*/
+
+//type conversion and coercion
+
+//explicit conversion, converting data from one format to another
+/*
+let num= String(6) //convert number in string data type
+let num1= Number("123")
+console.log(num1, typeof num1)
+*/
+
+//coercion type
+
+/* based on what type of operator you are using, 
+based on what's requirment JS engine changed for you */
+/*
+let x
+console.log(x, typeof x) //undefined undefined
+
+x= 8
+console.log(x, typeof x) // 8 Number
+
+x= x + ""
+console.log(x, typeof x) // 8 string
+
+x= x - 2
+console.log(x, typeof x) // 6 number
+*/
+/*
+let x= 5
+x= !x
+console.log(x, typeof x) //false boolean
+
+console.log(Boolean(7)) //true -> truthy value
+console.log(Boolean(0)) //false -> falsy value
+console.log(Boolean(null)) //false -> falsy value
+console.log(Boolean(undefined)) //false -> falsy value
+console.log(Boolean("keshav")) //true
+//all the numbers are true except 0
+*/
+
+//trying to convert int in num format
+/*
+console.log("123 keshav") //123 keshav
+console.log(Number("123 keshav")) //NaN
+console.log(parseInt("123 keshav")) //123 -> it except str and try to convert into Number
+console.log(parseInt("N123 keshav")) //NaN -> character in start will not work
+*/
+
+//Arithmetic operators
+/*
+let num1= 5
+let num2= 2
+
+let result= num1+num2 //addition
+result= num1-num2 //subtraction
+result= num1*num2 //multiplication
+result= num1/num2 //division
+result= num1%num2 // find reminder
+
+console.log(result)
+*/
+
+/*
+console.log(true + true) //2 -> bcz, in boolean true= 1, false=0
+
+let num= 4
+
+//num= num+2 //6
+//num+=2 //6
+//num++ //5 -> increment by 1, called post increment
+//++num //5 -> increment by 1, called pre increment
+num-- //3 -> decrement
+console.log(num)
+*/
+
+/*
+let num= 4
+let x= num++ //post increment-> 1st it will fetch value then assign
+console.log(x, num) // 4, 5
+*/
+
+/*
+let num= 4
+let x= ++num //pre increment -> 1st it will increment then assign value
+console.log(x, num) //5, 5
+*/
+
+//finding cube of a Number
+/*
+let num=4
+//let result= num*num*num //64
+//let result= Math.pow(4,3) //64
+let result= 4**3 //64
+console.log(result)
+*/
+
+//relational operators
+//-> compare diffrent values
+// a < b -> a is less then b
+// a > b -> a is greater then b
+/*
+console.log(5 > 4) //true
+console.log(5 < 4) //false
+
+let x= 5
+let y= 5
+
+console.log(x <= y) //true
+
+console.log("Pen" > "Book") //true -> it compares each char from start
+console.log("Pen" > "Pencil") //false
+//ASCII value -> every char has unique value, i.e A=1, B=2
+*/
+/*
+console.log("2" > 1) //true -> 1st will convert int to num
+console.log("2" > 3) // false
+console.log(3 == 3) //true -> (==)equality operator, (=) assigning operator
+console.log("3" == 3) //true
+console.log("3" === 3) // false
+// (==) checks only data not type
+// (===) checks both data and type, recom to use for equality comparision
+*/
+
+//logical operator
+//chart -> https://images.app.goo.gl/men36LWTG4WPsQ8d9
+// And (&), OR (|), Not (!)
+//Mathmatical form -> JS form 
+//dot (.) -> Ampersand (&)
+//plus (+) -> pipe (|)
+// tilde (~) -> exclamation (!)
+
+/*
+let x= 7, y=8, z=9
+
+//let result= x < y && x < z // (&) represent bitwise operator to diffrentiate use (&&) for Ampersand
+let result = x < y || x < z // true, OR operator
+
+console.log(result)
+*/
+/*
+let x=7, y=2, z=5
+let result= x < y || x < z //false
+let n= !result
+
+console.log(result, n) //false true
+*/
