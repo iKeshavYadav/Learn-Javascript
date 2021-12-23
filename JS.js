@@ -309,3 +309,28 @@ else{
 }
 console.log("Bye...");
 */
+
+//ternary operator -> ?:
+/*
+let num= 8
+let result
+
+if(num%2===0){
+  result= "Even"
+}
+
+else{
+  result= "Odd"
+}
+
+console.log(result)
+*/
+//or
+/*
+num= 7
+let result
+
+result= num%2===0 ? "Odd" : "Even"
+//if the condition is true,it will execute 1st statement else 2nd
+console.log(result);
+*/
