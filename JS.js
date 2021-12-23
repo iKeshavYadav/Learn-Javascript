@@ -562,3 +562,21 @@ let alien= {
 delete alien.tech //delete value
 console.log(alien)
 */
+
+//for in loop 
+/*
+let alien= {
+  name:'keahav',
+  tech:'JS',
+  laptop:{
+    cpu:'i7',
+    ram:4,
+    brand:'ASUS',
+  }
+}
+
+for(let key in alien){
+  //console.log(key); //fetch only key one by one
+  console.log(key, alien[key]); //fetch key along with value
+}
+*/
