@@ -580,3 +580,13 @@ for(let key in alien){
   console.log(key, alien[key]); //fetch key along with value
 }
 */
+
+//functions in JS
+/*
+function greet() //defining function
+{
+  console.log('Hlo aliens!')
+};
+
+greet(); //calling a function
+*/
