@@ -501,3 +501,28 @@ while(num>0){
 1
 0
 */
+
+//objects in js
+/*
+let alien= {}
+console.log(typeof alien) //object
+*/
+/*
+let alien= {
+  name:'keshav',
+  tech: 'JS',
+  'work exp': 'four'
+}
+console.log(alien); //{ name: 'keshav', tech: 'JS' }
+console.log(alien.name) //keshav
+console.log(alien['name']) //keshav
+console.log(alien['work exp'])
+*/
+/*
+let input= 'name'
+let alien= {
+  name:'keshav'
+}
+console.log(alien.input) //undefind
+console.log(alien[input]) //keshav
+*/
