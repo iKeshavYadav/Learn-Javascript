@@ -591,23 +591,27 @@ function greet() //defining function
 greet(); //calling a function
 */
 
-//Function return and passing
+//return function, Passing parameters
 
+
+//return instead of print
 /*
 function greet(){
-    return "Hello World !" //this will return the data to its function were called
+  return 'hlo aliens!'
 }
 
-let str = greet()
-console.log(str)
+let str= greet(); //str var will store call function
+console.log(str);
 */
 
+//passing parameters
 /*
-function greet(user){
-    return `Hello ${user} !`
-}
+function greet(user) //accepting value
+{
+  return `hlo ${user}!`
+};
 
-let user = "Keshav";
-let str = greet(user);
+let user= 'keshav'
+let str= greet(user); //passing value by calling function
 console.log(str);
 */
