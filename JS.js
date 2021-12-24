@@ -692,3 +692,30 @@ let laptop= {
 
 laptop.greet() //func greet belongs to laptop obj
 */
+
+//'this' keyword in js
+/*
+let laptop2= {
+  cpu:'i7',
+  ram:'8',
+  brand:'HP',
+  
+  getConfig:function(){
+    console.log(laptop2.cpu);
+  }
+};
+
+let laptop1= {
+  cpu:'i9',
+  ram:'8',
+  brand:'HP',
+  
+  getConfig:function(){
+    console.log(this.cpu); //this keyword represent the current obj
+    //based on which method or obj this will refer to that particular obj
+  }
+};
+
+laptop1.getConfig()
+laptop2.getConfig()
+*/
