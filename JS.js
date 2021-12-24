@@ -626,3 +626,18 @@ let add= function(num1, num2) //anonymous func or obj bcz it has no name
 let result= add(5,6);
 console.log(result);
 */
+
+//Local-Global variable and default value
+/*
+let user= 'keshav'; //global var and can be access inside or outside the func
+
+function greet(u) //passing this var is also a local var
+{
+  let num=5; //local var and can be access only inside func not the outside
+  console.log(num);
+  return `hlo ${u}!`
+};
+//console.log(num); //can't access local var outside the func
+let str= greet(user);
+console.log(str);
+*/
