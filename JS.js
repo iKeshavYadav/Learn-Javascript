@@ -615,3 +615,14 @@ let user= 'keshav'
 let str= greet(user); //passing value by calling function
 console.log(str);
 */
+
+//function expression
+/*
+let add= function(num1, num2) //anonymous func or obj bcz it has no name
+{
+  return num1 + num2 //expression
+};
+
+let result= add(5,6);
+console.log(result);
+*/
