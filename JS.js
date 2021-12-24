@@ -641,3 +641,17 @@ function greet(u) //passing this var is also a local var
 let str= greet(user);
 console.log(str);
 */
+
+/*
+//arguments and parameter
+function add(num1,num2,num3=1) //parameters
+//if you don't pass 3 argument 3rd parameter would be 1 by default 
+//and when you pass 3 argument it replace the default value 
+{
+  console.log(num1,num2,num3);
+  return num1+num2+num3;
+};
+
+let result= add(5,6,7); //arguments
+console.log(result);
+*/
