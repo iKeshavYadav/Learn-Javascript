@@ -655,3 +655,23 @@ function add(num1,num2,num3=1) //parameters
 let result= add(5,6,7); //arguments
 console.log(result);
 */
+
+//Arrow function
+//arrow func reduces no of code and specify this code belongs to this func
+//you don't need to put function keyword
+/*
+let greet= (user) => {
+  console.log('hello ' + user);
+  return 1;
+};
+console.log(greet('keshav'));
+*/
+
+/*
+let add= (num1,num2) => num1+num2;
+//don't need to put function keyword
+//if the func has only one statement, no need to {} bracket or return keyword
+let result= add(5,6);
+console.log(result);
+*/
+
