@@ -675,3 +675,20 @@ let result= add(5,6);
 console.log(result);
 */
 
+/*
+//Methods in JS 
+
+//you can call methods or function
+
+let laptop= {
+  cpu:'i9',
+  ram:'8',
+  brand:'HP',
+  
+  greet:function(){
+    console.log('hello aliens!');
+  }
+};
+
+laptop.greet() //func greet belongs to laptop obj
+*/
