@@ -790,3 +790,49 @@ let laptop2 = {
 
 laptop1.compare(laptop2)
 */
+
+/*
+//constructor function in JS
+
+//craeting constructor function which would have same property for multiple obj
+//recommended to use 1st letter capital of constructor func to differentiate from normal func
+function Alien(name, tech){
+    this.name = name;
+    this.tech = tech;
+};
+
+//object 1 | passing its value 
+let alien1 = new Alien("Keshav", "JS"); //'new' keyword create new obj everytime
+// console.log(alien1);
+
+//object 2
+let alien2 = new Alien("Aradhna","English");
+alien1.tech = 'Blockchain'; //will reflect only in obj 2 
+console.log(alien2);
+
+*/
+
+/*
+// adding method in constructor func which will shared by the every obj commonly
+
+//constructor function 
+function Alien(name, tech){
+    this.name = name;
+    this.tech = tech;
+
+    //constructor method, property will be shared by the every obj commolny
+    this.work = function(){
+        console.log("solving bugs from 12hrs")
+    }
+}
+
+//object 1
+let alien1 = new Alien("keshav", "javascipt");
+console.log(alien1);
+alien1.work()
+
+//object 2
+let alien2 = new Alien("Aradhna", "English");
+console.log(alien2);
+alien2.work()
+*/
