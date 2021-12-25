@@ -719,3 +719,74 @@ let laptop1= {
 laptop1.getConfig()
 laptop2.getConfig()
 */
+
+//why 'this' keyword 
+
+/*
+// function for comparing two laptops
+function getFastLaptop(laptop1, laptop2){
+    if(laptop1.cpu > laptop2.cpu){
+        console.log(laptop1);
+    }
+    else{
+        console.log(laptop2);
+    }
+}
+
+// Object 1
+let laptop1 = {
+    cpu:9,     //object property
+    ram:16,
+    brand:'HP',
+} 
+
+// Object 2
+let laptop2 = {
+    cpu:7,     //object property
+    ram:16,
+    brand:'Apple',
+}
+
+getFastLaptop(laptop1,laptop2)
+
+*/
+
+/*
+// function which will compare itself from other laptop
+
+// Object 1
+let laptop1 = {
+    cpu:9,     //object property
+    ram:16,
+    brand:'HP',
+
+    //object method - Function comparing its cpu to other laptop
+    compare:function(other){
+        if(this.cpu > other.cpu){
+            console.log(this);
+        }
+        else{
+            console.log(other);
+        }
+    },
+} 
+
+// Object 2
+let laptop2 = {
+    cpu:9,     //object property
+    ram:16,
+    brand:'Apple',
+
+    //object method - Function comparing its cpu to other laptop
+    compare:function(other){
+        if(this.cpu > other.cpu){
+            console.log(this);
+        }
+        else{
+            console.log(other);
+        }
+    },
+}
+
+laptop1.compare(laptop2)
+*/
