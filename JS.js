@@ -858,3 +858,16 @@ console.log(values, typeof values);
 // names[0]= 4 //adding values using index value
 // console.log(values[1]); //fetch value using index value 
 
+/*
+//Different types of data in array 
+
+//array can hold different types of data types (e.g. num, str, obj, func, etc)
+
+let data = ["Keshav", "Satyam", "Shashank", 5, 1.2,{tech:"JS"}, function(){
+    console.log("Hello world!")
+}]
+
+console.log(data)
+
+// data[6](); //calling function inside the array 
+*/
