@@ -871,3 +871,18 @@ console.log(data)
 
 // data[6](); //calling function inside the array 
 */
+/*
+//Array methods in JS -> https://javascript.info/array-methods
+
+let data = [5,7,8,9,3];
+
+// data.push(2) //will add value in end
+// data.pop(); //will remove the last recent added value from end
+// data.shift() //will remove value from & changes index value
+// data.unshift(4) //will add value in start & changes index value
+// data.splice(2); //will remove all values starting from index value 2
+// data.splice(2,1);  //will remove 1 value from index 2
+// data.splice(2,1, 11, 12) //will remove 1 value from index 2 & add 11, 12 on its place 
+
+console.log(data);
+*/
