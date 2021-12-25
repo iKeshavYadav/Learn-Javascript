@@ -836,3 +836,23 @@ let alien2 = new Alien("Aradhna", "English");
 console.log(alien2);
 alien2.work()
 */
+//Creating an Array and fetching elements in JS 
+
+//array -> When you have multiple values, you don't wanted to assign them in key value pair - Use array their
+
+/*
+//two ways to create array
+
+// creating array 1 way -> Array Literal
+let values = new Array();
+console.log(values, typeof values);
+
+//creating array 2nd way -> Array Constructor
+let values = [];
+console.log(values, typeof values);
+*/
+
+// let values = [5, 8, 7];
+// console.log(values.length); //length of the array 
+// values.push(9, 10); //will add the value in end
+// console.log(values[1]); //fetch value using index value 
