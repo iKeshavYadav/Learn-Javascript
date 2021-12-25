@@ -855,4 +855,6 @@ console.log(values, typeof values);
 // let values = [5, 8, 7];
 // console.log(values.length); //length of the array 
 // values.push(9, 10); //will add the value in end
+// names[0]= 4 //adding values using index value
 // console.log(values[1]); //fetch value using index value 
+
