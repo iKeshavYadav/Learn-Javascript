@@ -886,3 +886,25 @@ let data = [5,7,8,9,3];
 
 console.log(data);
 */
+/*
+//For-of loop with an Array in JS
+
+let nums = [];
+
+nums[0] = 5;
+nums[99] = 9
+
+//for-of loop fetch the 'value assigned' to the property
+for(let n of nums){
+    console.log(n)
+}
+
+
+//for-in loop fetch the 'key' of property (in this case index value)
+// for(let key in nums){
+//     console.log(key);
+// }
+
+
+//with array it make sense to use for-of loop when you have to work with value not the key of it
+*/
