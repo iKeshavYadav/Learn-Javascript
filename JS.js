@@ -908,3 +908,39 @@ for(let n of nums){
 
 //with array it make sense to use for-of loop when you have to work with value not the key of it
 */
+
+/*
+//Array Destructuring in JS
+
+// let nums = [5,7,2,4];
+// console.log(nums)
+
+//above array will get destructured & assigned respectively 
+//let [a,b,c,d] = nums;
+
+// let [a,b,,d] = nums; //we can skip the var but put comma in order to maintain it's arrangement :)
+//console.log(d);
+
+//swaping two var 
+
+// let a = 5;
+// let b = 6;
+
+// [a,b] = [b,a]
+
+// console.log(a,b)
+
+
+//Array of string
+
+//.split(' ') -> will convert str in array format 
+let words = "My name is Keshav Yadav".split(' ') //[ 'My', 'name', 'is', 'Keshav', 'Yadav' ]
+//console.log(words);
+
+//destructuring an array 
+//let [a,b,c,d,e] = words;
+//console.log(a,b); //My name
+
+let [a,b,c,...d] = words; //after the three dot all the element will be stored in a single var (d)
+console.log(d);
+*/
