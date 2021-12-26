@@ -944,3 +944,23 @@ let words = "My name is Keshav Yadav".split(' ') //[ 'My', 'name', 'is', 'Keshav
 let [a,b,c,...d] = words; //after the three dot all the element will be stored in a single var (d)
 console.log(d);
 */
+
+/*
+//Array forEach methods in JS  | Array methods
+
+let nums = [42,51,24,98,65,12];
+
+//forEach is a method which give one-by-one value 
+nums.forEach((n)=>{
+    console.log(n);
+});
+
+// console.log(nums);
+
+
+//also -> forEach takes 3 parameters (e.g. one value at a time, index value, and array)
+// nums.forEach((n,i, nums)=>{
+//     console.log(n,i,nums);
+// });
+*/
+
