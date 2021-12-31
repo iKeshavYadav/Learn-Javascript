@@ -983,3 +983,33 @@ let nums = [42,51,24,98,65,12];
 // let reduce1 = nums.reduce((a,b) => a+b)
 // console.log(reduce1)
 */
+/*
+//Set in JS
+
+//Set is collection of -> unique value | Unorder list | No index value 
+
+// let nums = new Set("bookkeeper");
+// console.log(nums); //Set(6) { 'b', 'o', 'k', 'e', 'p', 'r' }
+
+
+let nums = new Set();
+
+nums.add(3);
+nums.add(4);
+nums.add(3);
+nums.add("Keshav");
+nums.add("Shashank");
+nums.add("Kushal");
+
+//console.log(nums); //Set(5) { 3, 4, 'Keshav', 'Shashank', 'Kushal' }
+
+
+// nums.forEach(value => {
+//     console.log(value); //print one-by-one value
+// });
+
+
+console.log(nums.has(3)); //true
+console.log(nums.has("Keshav")) //true
+console.log(nums.has("keshav")); //false - bcz of case-sensative
+*/
