@@ -1013,3 +1013,33 @@ console.log(nums.has(3)); //true
 console.log(nums.has("Keshav")) //true
 console.log(nums.has("keshav")); //false - bcz of case-sensative
 */
+/*
+//map in JS 
+
+//map will have -> key and value pair 
+
+
+let map = new Map();
+
+map.set("Keshav", "Java");
+map.set("Shashank", "Android");
+map.set("Kushal", "ML");
+map.set("Keshav", "JS") //new value will get replaced for the key as it uses map. 
+
+// console.log(map.keys()); //[Map Iterator] { 'Keshav', 'Shashank', 'Kushal' }
+// console.log(map.has("Keshav")); //true
+
+//get value of key
+// console.log(map.get("Keshav")); //JS
+
+//print all value 
+// for(let [k,v] of map){
+//     console.log(k," : ", v);
+// }
+
+
+
+map.forEach((v,k) =>{
+    console.log(k, " : ", v)
+} )
+*/
