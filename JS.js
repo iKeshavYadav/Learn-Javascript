@@ -1043,3 +1043,25 @@ map.forEach((v,k) =>{
     console.log(k, " : ", v)
 } )
 */
+
+/*
+//What is Recursion?
+//A function calling itself
+
+// function show(){
+//     console.log("Hi");
+//     show(); //RangeError: Maximum call stack size exceeded -> Calling function itself
+// }
+
+// show(); //calling function
+
+//will print till -> 11299 times
+let num = 1;
+function show(){
+    console.log("Hi ", num);
+    num++
+    show();
+}
+
+show();
+*/
