@@ -964,3 +964,22 @@ nums.forEach((n)=>{
 // });
 */
 
+/*
+//filter, map, reduce | Array methods 
+
+let nums = [42,51,24,98,65,12];    
+
+//filter -> will filter based on condition
+// nums.filter(n => n%2===0)
+//     .forEach(n => {
+//         console.log(n);
+//     });
+
+//map -> creates a new array from calling a function for every array element
+// let map1 = nums.map(n => n*2);
+// console.log(map1); 
+
+//reduce -> takes two parameter, a = accumulated, b = current element of an array
+// let reduce1 = nums.reduce((a,b) => a+b)
+// console.log(reduce1)
+*/
