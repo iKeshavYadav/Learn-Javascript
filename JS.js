@@ -1065,3 +1065,18 @@ function show(){
 
 show();
 */
+/*
+//Factorial using Recursion | JS
+//5! =  5*4*3*2*1 = 120
+
+function fact(n){
+    if(n===0)
+        return 1;
+    else
+        return n * fact(n-1);
+}
+
+let num = 5;
+result = fact(num);
+console.log(result);
+*/
