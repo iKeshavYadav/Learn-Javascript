@@ -1080,3 +1080,23 @@ let num = 5;
 result = fact(num);
 console.log(result);
 */
+
+//Copying an object one to another
+/*
+const jessica2 = {
+    firstName: 'Jessica',
+    lastName: 'Williams',
+    age:27,
+    family:['Alice', 'Bob'],
+}
+
+//object.assign function will copy the object to new object {}
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'davis';
+
+jessicaCopy.family.push('Marry');
+jessicaCopy.family.push('John');
+
+console.log('Before Marriage', jessica2);
+console.log('After Marriage',jessicaCopy);
+*/
