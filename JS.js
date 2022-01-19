@@ -930,6 +930,10 @@ for(let n of nums){
 
 // console.log(a,b)
 
+// Default values
+const [p=1, q=1, r=1, s=1] = [6,7,8]
+console.log(p, q, r, s);
+
 
 //Array of string
 
