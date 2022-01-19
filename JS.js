@@ -947,6 +947,76 @@ let words = "My name is Keshav Yadav".split(' ') //[ 'My', 'name', 'is', 'Keshav
 
 let [a,b,c,...d] = words; //after the three dot all the element will be stored in a single var (d)
 console.log(d);
+
+
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+  },
+};
+
+//Destructuring an Objects
+
+//No need to maintain the order of element like array
+//will create brand new var
+const {name, openingHours, categories} = restaurant;
+// console.log(name, openingHours, categories);
+
+//Destructuring and renaming the objects
+const{
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags
+} = restaurant;
+// console.log(restaurantName, hours, tags);
+
+
+//Nested obj destructuring
+
+const {
+  fri,
+  fri: {open, close},
+  fri: {open: o, close: c},
+} = openingHours;
+
+console.log(fri);
+console.log(open, close);
+console.log(o,c);
+
+
+//Default values for Destructured Objects
+const {
+  menu = [], //obj which not exists
+  starterMenu: starters = [], //obj renaming and set default value
+} = restaurant;
+// console.log(menu, starters);
+
+
+//Mutating obj variables
+
+let a = 111;
+let b = 999;
+const obj = {a: 23, b: 7, c: 14};
+({a,b} = obj);
+// console.log(a,b);
+
 */
 
 /*
