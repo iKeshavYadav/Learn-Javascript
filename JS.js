@@ -1174,3 +1174,59 @@ jessicaCopy.family.push('John');
 console.log('Before Marriage', jessica2);
 console.log('After Marriage',jessicaCopy);
 */
+/*
+//Spread operator 
+
+//Creating an new array form existing array and adding more values at the begining
+const arr = [7,8,9];
+const badNewArr = [1, 2, 3, arr[0], arr[1], arr[2]];
+// console.log(badNewArr);
+
+//spread operator (...)
+const newArr = [1,2, ...arr];
+// console.log(newArr); //[1, 2, 7, 8, 9]
+// console.log(...newArr); //1 2 7 8 9 -> Gives array elements individually 
+
+//Data needed for the below operations
+const restaurant = {
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+  orderPasta: function(ing1, ing2, ing3){
+    console.log(`Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}`);
+  },
+};
+
+//Adding new items to the existing Menu items
+const newMenu = [...restaurant.mainMenu, 'Pakoras', 'Matar Paneer']
+// console.log(newMenu);
+
+//copy array 
+const mainMenuCopy = [...restaurant.mainMenu];
+
+//join 2 arrays 
+const menu = [...restaurant.starterMenu,...restaurant.mainMenu];
+// console.log(menu);
+
+//Iteraring strings
+const name = 'Keshav';
+const letters = [...name, '', 'Y.']
+// console.log(letters); //['K', 'e', 's', 'h', 'a', 'v', '', 'Y.']
+
+
+//Real-world example on spread operator
+const ingredients = [
+  // prompt("Let's make pasta!, Ingredient 1?"), 
+  // prompt('Ingredient 2?'), 
+  // prompt('Ingredient 3?'),
+];
+// console.log(ingredients);
+
+restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
+//or
+restaurant.orderPasta(...ingredients);
+
+//spread operator with Objects
+
+const newRestaurant = {foundedIn: 1998, ...restaurant, founder:'Keshav'};
+console.log(newRestaurant);
+*/
