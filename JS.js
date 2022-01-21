@@ -1337,6 +1337,16 @@ const guests1 = restaurant.numGuest ? restaurant.numGuest: 10; //if numGuest is 
 const guests2 = restaurant.numGuest || 10;
 // console.log(guests2);
 
+//Nullish coalescing operator (??)
+restaurant.numGuest = 0;
+
+const guest = restaurant.numGuest = restaurant.numGuest || 10;
+// console.log(guest); //10 : it sholud be 0 if numGuest is defined
+
+//Nullish: null and undefined (NOT 0 or '')
+const guestCorrect = restaurant.numGuest ?? 10;
+// console.log(guestCorrect); //0
+
 console.log('---AND (&&)----');
 //AND (&&) will throw which ever the first falsy value comes else the last truthy value just opposite to (||) OR operator
 
