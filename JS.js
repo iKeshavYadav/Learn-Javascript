@@ -1365,3 +1365,41 @@ if(restaurant.orderPizza){
 //it will check the existance of the function then call
 restaurant.orderPizza && restaurant.orderPizza('Paneer', 'Catchup');
 */
+/*
+//Enhanced Object literals 
+
+// Data needed for first part of the section
+const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+const openingHours = {
+  [weekdays[3]]: {
+      open: 12,
+    },
+    [weekdays[4]]: {
+      open: 11,
+      close: 23,
+    },
+    [`day-${2+4}`]: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+};
+
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+
+  //ES6 Enhanced Object literals 
+  openingHours,
+  
+  //In ES6 Enhanced Object literals, No need to use (:) and function keywords
+  orderPizza(mainIngredient, ...otherIngredients){
+    console.log(mainIngredient);
+    console.log(otherIngredients);
+  },
+};
+
+console.log(restaurant);
+*/
