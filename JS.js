@@ -1461,3 +1461,48 @@ const users = [
 ]
 console.log(users[0]?.name ?? 'User Array Empty')
 */
+/*
+// Data needed for first part of the section
+const restaurant = {
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+  },
+};
+
+//Looping objects: key, values, and entries 
+
+//Property Names
+const properties = Object.keys(restaurant.openingHours);
+console.log(properties);
+
+
+let openStr = `We are open on ${properties.length} days: `;
+for(let day of properties){
+  openStr +=`${day}, `
+}
+console.log(openStr);
+
+//Property Values
+const values = Object.values(restaurant.openingHours);
+console.log(values);
+
+//Entire objects 
+const entries = Object.entries(restaurant.openingHours)
+console.log(entries);
+
+
+for(let [key, {open, close}] of entries){
+  console.log(`On ${key} we open at ${open} and close at ${close}`);
+}
+*/
