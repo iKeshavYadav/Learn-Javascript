@@ -1403,3 +1403,61 @@ const restaurant = {
 
 console.log(restaurant);
 */
+/*
+// Data needed for first part of the section
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+  },
+};
+
+
+//Optional chaining (?)
+
+if(restaurant.openingHours && restaurant.openingHours.mon){
+  console.log(restaurant.openingHours.mon.open);
+}
+
+//WITH Optional chaining (?)
+//before the '?' if exists then read next property, if not exists return undefined instead of error
+console.log(restaurant.openingHours.mon?.open);
+console.log(restaurant.openingHours?.mon?.open);
+
+//Example
+const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+for(const day of days){
+  // const open = restaurant.openingHours[day]?.open;
+  const open = restaurant.openingHours[day]?.open ?? 'Closed'; //Nullish operator
+  console.log(`On ${day}, We open at ${open}`);
+};
+
+//checking methods if it exists 
+console.log(restaurant.order?.('Paneer','Tomato') ?? 'Method not found');
+
+//Array 
+
+const users = [
+  {
+    name: 'Keshav',
+    email:'contct.keshavyadav@gmail.com',
+  }
+]
+console.log(users[0]?.name ?? 'User Array Empty')
+*/
