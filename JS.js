@@ -14,9 +14,43 @@ console.log(num)
 
 //string in JS
 /*
-let username= 'keshav'
+let username= 'Keshav'
 let username1= "keshav's laptop"
-console.log(username) //keshav
+console.log(username) //Keshav
+console.log(username[0]);//K
+console.log(username.slice(2)); //shav
+console.log(username.slice(2,5));//sha
+console.log('Keshav'[0]); //K
+console.log(typeof username); //string
+console.log(username.indexOf('h')); //3
+console.log(username.lastIndexOf('h'));//3
+console.log(username.length);//6
+console.log(username.toLowerCase()); //keshav
+console.log(username.toUpperCase()); //KESHAV
+console.log(username.includes('Kes')); //true
+console.log(username.startsWith('Ke'));//true
+
+//fix capitalization in name
+const name = 'kEshAv';
+const nameLower = name.toLowerCase();
+const correctName = nameLower[0].toUpperCase() + nameLower.slice(1);
+console.log(correctName);//Keshav
+
+const fullName = '   Keshav Yadav   ';
+const fName = fullName.trim(); //trim() method removes whitespace from both sides of a string
+console.log(fName);
+
+const rupay = '500 ₹'
+const toDollar = rupay.replace('₹', '$'); //replace() method returns a new string with the value(s) replaced.
+console.log(toDollar);
+
+const str = 'a+very+nice+string'; //split() method splits a string into an array of substrings
+console.log(str.split('+')); //['a', 'very', 'nice', 'string']
+console.log('Keshav Yadav'.split(' ')); //'Keshav', 'Yadav']
+
+const myName = ['Keshav', 'Yadav']
+console.log(myName.join(' ')); //join() method creates and returns a new string by concatenating all of the elements in an array, separated by commas or a specified separator string
+
 */
 
 //data types
