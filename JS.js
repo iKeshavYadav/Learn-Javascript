@@ -1304,3 +1304,54 @@ const x = [1,2,3];
 //or
 restaurant.orderPizza('mushrooms');
 */
+/*
+//short circuiting
+
+//Data needed for below operations 
+const restaurant = {
+  
+  orderPizza: function(mainIngredient, ...otherIngredients){
+    console.log(mainIngredient);
+    console.log(otherIngredients);
+  },
+};
+
+console.log('---Logical OR (||) ---');
+//- Uses ANY data type, return ANY data type, short-circuiting
+// (||) will throw which ever the first truthy value comes else the last falsy value
+console.log(3 || 'Keshav'); //3
+console.log(''|| 'Keshav'); //Keshav
+console.log(true || 0); //true
+console.log(undefined || null); //null
+
+console.log(undefined || 0 || '' || 'Hello' || 23 || null); //Hello
+
+//Practical example of short-circuiting using OR (||) operator
+// restaurant.numGuest = 23; //This will not work if the value is 0
+//ternary operator
+const guests1 = restaurant.numGuest ? restaurant.numGuest: 10; //if numGuest is not defined 10 would be the default value
+// console.log(guests1);
+//or 
+
+//short-circuiting using OR (||) operator
+const guests2 = restaurant.numGuest || 10;
+// console.log(guests2);
+
+console.log('---AND (&&)----');
+//AND (&&) will throw which ever the first falsy value comes else the last truthy value just opposite to (||) OR operator
+
+console.log(0 && 'Keshav'); //0
+console.log(7 && 'Keshav');//Keshav
+
+console.log('Helo' && 23 && null && 'Keshav'); //null : a falsy value found firts
+
+//Practical example of short-circuiting using AND (&&) operator
+
+//checking if 'orderPizza Exists'
+if(restaurant.orderPizza){
+  restaurant.orderPizza('Paneer', 'Catchup');
+}
+//or
+//it will check the existance of the function then call
+restaurant.orderPizza && restaurant.orderPizza('Paneer', 'Catchup');
+*/
