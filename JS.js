@@ -1092,6 +1092,13 @@ console.log(nums.has("keshav")); //false - bcz of case-sensative
 
 //map will have -> key and value pair 
 
+let nums = new Map([
+  ['task', 'code'],
+  ['date', 'today'],
+  [false, 'start coding'],
+])
+
+// console.log(nums);
 
 let map = new Map();
 
