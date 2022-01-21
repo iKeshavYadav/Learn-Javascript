@@ -1076,7 +1076,7 @@ nums.add("Shashank");
 nums.add("Kushal");
 
 //console.log(nums); //Set(5) { 3, 4, 'Keshav', 'Shashank', 'Kushal' }
-
+// console.log(nums.size); //5
 
 // nums.forEach(value => {
 //     console.log(value); //print one-by-one value
