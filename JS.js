@@ -1547,3 +1547,28 @@ for(let [key, {open, close}] of entries){
   console.log(`On ${key} we open at ${open} and close at ${close}`);
 }
 */
+/*
+//Functions - Default parameters 
+
+const bookings = [];
+
+//Setting default value inside passing arguments: ES6 way 
+const createBooking = function(flightNum, numPassengers=1, price=199*numPassengers){
+   
+    //Setting default value: ES5 Code way 
+    // numPassengers = numPassengers || 1;
+    // price = price || 199;
+
+    const booking = {
+        flightNum,
+        numPassengers,
+        price,
+    }
+    console.log(booking);
+    bookings.push(booking);
+};
+createBooking('LH123');
+createBooking('LH123', 2, 800 );
+createBooking('LH123',5);
+createBooking('LH123', undefined, 1000);
+*/
