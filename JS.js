@@ -1572,3 +1572,78 @@ createBooking('LH123', 2, 800 );
 createBooking('LH123',5);
 createBooking('LH123', undefined, 1000);
 */
+
+//Higher-Order function 
+
+//Array which contains the radius of 4 circles 
+// const radius = [3,1,2,4];
+
+/*
+
+//Example: Doing some operatin as always way-
+
+//calculate the area of circle
+const calculateArea = function(radius){
+    const output = [];
+    for(let i = 0; i < radius.length; i++){
+        output.push(Math.trunc(Math.PI) * radius[i] * radius[i]);
+    }
+    return output;
+};
+// console.log(calculateArea(radius));
+
+//calculate the circumference of a circle
+const calculateCircumference = function(radius){
+    const output = [];
+    for(let i = 0; i < radius.length; i++){
+        output.push(Math.trunc(2  * Math.PI) * radius[i] * radius[i]);
+    }
+    return output;
+};
+// console.log(calculateCircumference(radius));
+
+
+//calculate the diameter of a circle
+const calculateDiameter = function(radius){
+    const output = [];
+    for(let i = 0; i < radius.length; i++){
+        output.push(Math.trunc(2 * radius[i]));
+    };
+    return output;
+};
+// console.log(calculateDiameter(radius));
+
+
+//Higer-order way-
+
+//finding an area of a circle
+const areaLogic = function(radius){ //call back function
+    return Math.trunc(Math.PI * radius * radius);
+};
+
+//finding circumference of a circle
+const circumferenceLogic = function(radius){ //call back function
+    return Math.trunc(2 * Math.PI * radius);
+};
+
+//calculate the diameter of a circle
+const diameterLogic = function(radius){ //call back function 
+    return Math.trunc(2 * radius);
+};
+
+//Higher-Order function
+const calculate =  function(radius, areaLogic){
+    const output = [];
+    for(let i = 0; i < radius.length; i++){
+        output.push(areaLogic(radius[i]));
+    };
+    return output;
+};
+
+// Area func
+console.log(calculate(radius, areaLogic));
+// Circumference func 
+console.log(calculate(radius, circumferenceLogic));
+//Diameter func 
+console.log(calculate(radius, diameterLogic));
+*/
