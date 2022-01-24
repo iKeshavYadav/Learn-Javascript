@@ -1668,63 +1668,38 @@ greetArr('Hi')('Keshav');
 */
 
 /*
+//call, apply and bind method in JS
 
-//The call and apply Methods
-const lufthansa = {
-    airline: 'Lufthansa',
-    iataCode: 'LH',
-    bookings:[],
-    // book: function(){};
-    book(flightNum, name){
-        console.log(
-            `${name} booked a seat on ${this.airline} flight ${this.iataCode} ${flightNum}`
-        );
-        this.bookings.push({flight:`${this.iataCode} ${flightNum}`, name});
-    },
+//Call method- 
+
+let printFullName =  function(hometown, state){ 
+    console.log(this.firstName + this.lastName + " " + " from " + hometown + ", " + state);
 };
 
-lufthansa.book(239, 'Keshav');
-lufthansa.book(635, 'Stayam');
-
-console.log(lufthansa);
-
-
-const eurowings = {
-    name:'Eurowings',
-    iataCode: 'EW',
-    bookings: [],
+//print full name
+let name = {
+    firstName: 'Keshav',
+    lastName: 'Yadav',
 };
+// call method: Function borrowing
+printFullName.call(name, 'Delhi', 'New Delhi');
 
-const book = lufthansa.book;
-
-//Not working 
-// book('23', 'Kushal');
-
-//Call method
-book.call(eurowings, 23, 'Kushal');
-console.log(eurowings);
-
-book.call(lufthansa, 239, 'Pintoo');
-console.log(lufthansa);
-
-
-const swiss = {
-    name:'Swiss Air Lines',
-    iataCode: 'LX',
-    bookings: [],
+//print full name 2
+let name2 = {
+    firstName: 'Sachin',
+    lastName: 'Tendulkar',
 };
-book.call(swiss, 583, 'Pintwo');
+printFullName.call(name2, 'Mumbai', 'Maharashtra');
 
-//Apply method
-const flightData = [583, 'Pintoo Yadav'];
-book.apply(swiss, flightData);
-console.log(swiss);
 
-book.call(swiss, ...flightData);
+//apply method-  
+//In apply method we passes 2nd arruments in an array
+printFullName.apply(name2, ['Mumbai', 'Maharashtra']);
 
-//bind method
-const bookEW = book.bind(eurowings);
-const bookLH = book.bind(lufthansa);
-const bookLX = book.bind(swiss);
-bookEW(23, 'Shivam');
+
+//bind method 
+//bind() method allows an object to borrow a method from another object without making a copy of that method. 
+let printMyName = printFullName.bind(name2, 'Mumbai', 'Maharashtra');
+console.log(printMyName);
+printMyName();
 */
