@@ -1647,3 +1647,22 @@ console.log(calculate(radius, circumferenceLogic));
 //Diameter func 
 console.log(calculate(radius, diameterLogic));
 */
+
+/*
+//Functions returning function 
+const greet = function(greeting){
+    return function(name){
+        // console.log(`${greeting} ${name}`);
+    };
+};
+
+const greeterHey = greet('Hey');
+greeterHey('Keshav');
+greeterHey('Satyam');
+
+greet('Hello')('Keshav');
+
+//using arrow function
+const greetArr = greeting => name => console.log(`${greeting} ${name}`);
+greetArr('Hi')('Keshav');
+*/
