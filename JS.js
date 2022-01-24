@@ -1666,3 +1666,58 @@ greet('Hello')('Keshav');
 const greetArr = greeting => name => console.log(`${greeting} ${name}`);
 greetArr('Hi')('Keshav');
 */
+
+/*
+//The call and apply Methods
+const lufthansa = {
+    airline: 'Lufthansa',
+    iataCode: 'LH',
+    bookings:[],
+    // book: function(){};
+    book(flightNum, name){
+        console.log(
+            `${name} booked a seat on ${this.airline} flight ${this.iataCode} ${flightNum}`
+        );
+        this.bookings.push({flight:`${this.iataCode} ${flightNum}`, name});
+    },
+};
+
+lufthansa.book(239, 'Keshav');
+lufthansa.book(635, 'Stayam');
+
+console.log(lufthansa);
+
+
+const eurowings = {
+    name:'Eurowings',
+    iataCode: 'EW',
+    bookings: [],
+};
+
+const book = lufthansa.book;
+
+//Not working 
+// book('23', 'Kushal');
+
+//Call method
+book.call(eurowings, 23, 'Kushal');
+console.log(eurowings);
+
+book.call(lufthansa, 239, 'Pintoo');
+console.log(lufthansa);
+
+
+const swiss = {
+    name:'Swiss Air Lines',
+    iataCode: 'LX',
+    bookings: [],
+};
+book.call(swiss, 583, 'Pintwo');
+
+//Apply method
+const flightData = [583, 'Pintoo Yadav'];
+book.apply(swiss, flightData);
+console.log(swiss);
+
+book.call(swiss, ...flightData);
+*/
