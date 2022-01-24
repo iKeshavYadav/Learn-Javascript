@@ -1704,3 +1704,23 @@ console.log(printMyName);
 printMyName();
 */
 
+/*
+//Immediately Invoked Function Expressions (IIFE)
+
+//create function use it onece and it get disappear 
+
+const runOnce = function(){
+    console.log('This will never run again');
+};
+runOnce();
+
+//or
+//IIFE
+(function(){
+    console.log('This will never run again');
+})();
+
+
+//IIFE with arrow function
+(() => console.log('This will never run again'))();
+*/
