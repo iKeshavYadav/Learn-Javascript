@@ -1668,6 +1668,7 @@ greetArr('Hi')('Keshav');
 */
 
 /*
+
 //The call and apply Methods
 const lufthansa = {
     airline: 'Lufthansa',
