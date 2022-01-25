@@ -1724,3 +1724,45 @@ runOnce();
 //IIFE with arrow function
 (() => console.log('This will never run again'))();
 */
+//Closures
+//A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function.
+//functions with its lexical scope forms closures
+/*
+function x(){
+    const a = 7;
+    function y(){
+        console.log(a); //Closure (x) a:7
+    };
+    y();
+};
+x();
+*/
+
+/*
+function x(){
+    const a = 7;
+    function y(){
+        console.log(a);
+    };
+    return y;
+};
+const z = x();
+console.log(z); //y(){console.log(a)};
+z(); //7
+*/
+/*
+function z(){
+    let b = 900;
+    function x(){
+        let a = 7;
+        function y(){
+        //trying to access parents var and parents-parents var
+        console.log('x: ' + a, 'z: ' + b); //x: 7 z: 900
+        //y form closures along with function and its scope x and z 
+        };
+        y();
+    };
+    x();
+};
+z();
+*/
