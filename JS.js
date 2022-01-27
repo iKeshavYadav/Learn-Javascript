@@ -1853,3 +1853,21 @@ console.log(new Date('December 24, 2015')); //Thu Dec 24 2015 00:00:00 GMT+0530 
 console.log(new Date(3*24*60*60*1000));//Sun Jan 04 1970 05:30:00 GMT+0530 (India Standard Time)
 
 */
+
+/*
+//Timers in JS
+
+// setTimeout(() => console.log('Here is your pizza 🍕'),3000); //after 3s will execute the console log
+// console.log('Waiting...');
+
+//passing arguments
+// setTimeout((ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2} 🍕`), 3000, 'olives', 'spinch'); 
+// console.log('Waiting...');  
+
+//cancelling the timers
+const ingredients = ['olives', 'spinch'];
+const pizzaTimer = setTimeout((ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2} 🍕`), 3000, ...ingredients); 
+console.log('Waiting...'); 
+
+if(ingredients.includes('spinch')) clearTimeout(pizzaTimer);
+*/
