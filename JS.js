@@ -1766,3 +1766,36 @@ function z(){
 };
 z();
 */
+
+//Array methods -> Some & Every
+
+//some() - method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array
+
+/*
+const ages = [10, 13, 18, 20];
+console.log(ages);
+
+//will check if any one number of the array is adult (18+) or not (true/false)
+const adult = ages.some(checkAdult);
+// console.log(adult); //true
+
+function checkAdult(age){
+    return age >= 18;
+};
+*/
+
+
+//every() - method returns true if the function returns true for all elements. The every() method returns false if the function returns false for one element.
+/*
+const ages = [100, 19, 25, 20];
+console.log(ages);
+
+//will check all the number of array is greater then 18 or not (true/false)
+const adult = ages.every(checkAdult);
+// console.log(adult); //true
+
+function checkAdult(age){
+    return age >= 18;
+};
+
+*/
