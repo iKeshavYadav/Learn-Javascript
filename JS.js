@@ -1799,3 +1799,31 @@ function checkAdult(age){
 };
 
 */
+
+/*
+//flat() and flatMap() methods in Array 
+
+// flat() - method creates a new array with all sub-array elements concatenated into one
+
+const arr = [1,2,3,[4,5,6],7,8];
+//flat() - will remove the nested array and flat all the array in one
+// console.log(arr.flat()); //[1, 2, 3, 4, 5, 6, 7, 8]
+
+//nested array in nested array
+const arrDeep = [[[1,2],3],[4,[5,6]],7,8];
+console.log(arrDeep.flat()); //[Array(2), 3, 4, Array(2), 7, 8]
+console.log(arrDeep.flat(2)); //will go deeper by 2 -  [1, 2, 3, 4, 5, 6, 7, 8]
+console.log(arrDeep.flat(Infinity)); //[1, 2, 3, 4, 5, 6, 7, 8]
+
+
+//flatMap() - A combination flat and map method - used to flatten the input array element into a new array. This method first of all map every element with the help of mapping function, then flattens the input array element into a new array. 
+
+const array = ['This is sentence 1', 'This is sentence 2', 'My sentence 3'];
+const newArray = array.map((current)=> current.split(' ')).flat();
+console.log(newArray);
+//or below flatMap will give the same result
+
+const array2 = ['This is sentence 1', 'This is sentence 2', 'My sentence 3'];
+const newArray2 = array2.flatMap((current)=> current.split(' '));
+console.log(newArray2);
+*/
