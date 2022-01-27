@@ -1827,3 +1827,29 @@ const array2 = ['This is sentence 1', 'This is sentence 2', 'My sentence 3'];
 const newArray2 = array2.flatMap((current)=> current.split(' '));
 console.log(newArray2);
 */
+
+//Dates in JS
+/*
+const now = new Date();
+console.log(now); //Thu Jan 27 2022 23:52:57 GMT+0530 (India Standard Time)
+
+console.log(now.getFullYear()); //2022
+console.log(now.getMonth()); //0 - bcz in js it start from 0 not 1
+console.log(now.getDate()); //27
+console.log(now.getDay());//4 - 4th day of week: Thursday
+console.log(now.getHours());//1
+console.log(now.getMinutes());//2
+console.log(now.getSeconds()); //50
+console.log(now.getMilliseconds()); //784
+console.log(now.toISOString()); //2022-01-27T18:36:52.594Z
+console.log(now.getTime()); //1643308648406 - In-Milliseconds
+console.log(Date.now()); //1643308724311
+now.setFullYear(2040)
+console.log(now.getFullYear());//2040
+
+console.log(new Date(2037, 10, 19, 15, 23, 5)); //Thu Nov 19 2037 15:23:05 GMT+0530 (India Standard Time)
+console.log(new Date('Aug 02 2020 18:05:41')); //Sun Aug 02 2020 18:05:41 GMT+0530 (India Standard Time)
+console.log(new Date('December 24, 2015')); //Thu Dec 24 2015 00:00:00 GMT+0530 (India Standard Time)
+console.log(new Date(3*24*60*60*1000));//Sun Jan 04 1970 05:30:00 GMT+0530 (India Standard Time)
+
+*/
