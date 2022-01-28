@@ -1871,3 +1871,40 @@ console.log('Waiting...');
 
 if(ingredients.includes('spinch')) clearTimeout(pizzaTimer);
 */
+//----Oops in Javascript----
+
+//Fundamental principals of Oops 
+//Abstraction 
+//Encapsulation
+//Inheritance 
+//Polymorphism
+
+//Abstraction:
+//Ignoring or hiding details that don't matter, allowing us to get an overview perspective of the thing we're implementing, instead of messing with details that don't really matter to our implementation.
+
+//Encapsulation:
+//Keeping properties and method private inside the class, so they are not accessible from outside the class. some methods can be exposed as a public interface (API).
+
+//Inheritance:
+//Making all properties and methods of a certain class available to a child class, forming a hierarchical relationship between classes. This allow us to use common logic and to model real-world relationships.
+
+//Polymorphism:
+//A child class can overwrite a method it inherited from a parent class.
+
+
+/*
+
+CLASSICAL OOP: CLASSES 
+class -> Blueprint 
+instance -> Objects
+Objects (instances) are instantiated from a class, which functions like a blueprint;
+Behavior (methods) is copied from class to all instances.
+
+
+OOP IN JS: PROTOTYPES
+Prototype - contains methods 
+objects - can access methods
+Objects are linked to a prototype objects;
+Prototyope inheritances: The prototype contains methods(behavior) that are accessible to all objects linked to that prototype;
+Behavior is delegated to the linked prototype.
+*/
