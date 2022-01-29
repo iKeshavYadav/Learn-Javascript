@@ -1980,5 +1980,30 @@ console.log(keshav.species, shashank.species); //Homo Sapiens Homo Sapiens
 console.log(keshav.hasOwnProperty('firstName')); //true
 console.log(keshav.hasOwnProperty('species')); //false - bcz the property is not really inside the keshav property but has access to it's prototype
 
+//-Prototypal inheritance on Built-in objects
+
+console.log(keshav.__proto__);
+//Object.prototype (top of prototype chain)
+console.log(keshav.__proto__.__proto__);
+console.log(keshav.__proto__.__proto__.__proto__); //null
+
+//the person onstructor is a constructor itself, below it will give the constructor function itself
+console.log(Person.prototype.constructor);
+//inspecting the constructor function
+console.dir(Person.prototype.constructor); //it points back to the Person
+
+const arr = [3,6,4,5,6,6,9,9,3,]; //new Array === []
+//prototype of an Array
+console.log(arr.__proto__);
+console.log(arr.__proto__ === Array.prototype); //true
+console.log(arr.__proto__.__proto__); //back to object property 
+
+//creating a funtion in prototype array constructor which will give the array of unique value
+//Now all Array can inherit this method, call this nethod on any array 
+Array.prototype.unique = function(){
+    return [...new Set(this)];
+};
+console.log(arr.unique());
+
 */
 
