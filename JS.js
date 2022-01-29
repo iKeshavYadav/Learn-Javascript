@@ -2007,3 +2007,51 @@ console.log(arr.unique());
 
 */
 
+/*
+//ES6 Classes
+
+//class expression
+// const PersonCl = class {};
+//or
+//class declaration
+// class PersonCl {};
+
+
+class PersonCl {
+
+    //method of the class, needs to be called constructor
+    constructor(firstName, birthYear){ //passing obj properties
+       this.firstName = firstName;
+       this.birthYear = birthYear; 
+    }
+
+    //method will be added to .prototype property
+    calcAge(){
+        console.log(2037 - this.birthYear);
+    };
+
+    //adding methods to the prototype funtion (write this or like below RF1)
+    greet(){
+    console.log(`Hey ${this.firstName}`)
+};
+}
+
+const keshav = new PersonCl('Keshav', 2002)
+console.log(keshav);
+keshav.calcAge();
+
+console.log(keshav.__proto__ === PersonCl.prototype); //true
+
+
+//adding methods to the prototype funtion (RF1)
+// PersonCl.prototype.greet = function(){
+//     console.log(`Hey ${this.firstName}`)
+// };
+
+keshav.greet(); //Hey Keshav
+
+//1. Classes are NOT hoisted (means can't use before declaration) | (functions are hoisted)
+//2. Classes are like functions - can pass into the function and also return from the function
+//3. Classes are the special type of functions behind the scene
+//4. Classes are executed in in strict mode
+*/
