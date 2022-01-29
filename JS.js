@@ -1940,3 +1940,35 @@ console.log(shashank, kushal);
 
 console.log(kushal instanceof Person); //true
 */
+
+/*
+//Prototypes 
+
+//Data
+const Person = function(firstName, birthYear){
+
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+};
+const keshav = new Person('Keshav', 2002);
+const shashank = new Person('Shashank', 2001);
+console.log(keshav, shashank);
+
+
+//Prototypes in picture
+
+console.log(Person.prototype);
+
+Person.prototype.calAge = function(){ //in 'Person' object (prototype) calcAge function will get added
+    console.log(2037 - this.birthYear);
+};
+
+keshav.calAge(); //35
+shashank.calAge(); //36
+
+//protype of keshav object is the prototype of constructor function
+console.log(keshav.__proto__); //{calAge: ƒ, constructor: ƒ}
+console.log(keshav.__proto__ === Person.prototype); //true
+console.log(Person.prototype.isPrototypeOf(keshav));//true
+//.prototypeOfLinkedObjects
+*/
