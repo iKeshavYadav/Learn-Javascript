@@ -1971,4 +1971,14 @@ console.log(keshav.__proto__); //{calAge: ƒ, constructor: ƒ}
 console.log(keshav.__proto__ === Person.prototype); //true
 console.log(Person.prototype.isPrototypeOf(keshav));//true
 //.prototypeOfLinkedObjects
+
+//adding properties to objects using prototype
+console.log(Person.prototype.species = 'Homo Sapiens');
+console.log(keshav.species, shashank.species); //Homo Sapiens Homo Sapiens
+
+//checking if properties are available in the Obj
+console.log(keshav.hasOwnProperty('firstName')); //true
+console.log(keshav.hasOwnProperty('species')); //false - bcz the property is not really inside the keshav property but has access to it's prototype
+
 */
+
