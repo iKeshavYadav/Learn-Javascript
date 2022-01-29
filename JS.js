@@ -1908,3 +1908,35 @@ Objects are linked to a prototype objects;
 Prototyope inheritances: The prototype contains methods(behavior) that are accessible to all objects linked to that prototype;
 Behavior is delegated to the linked prototype.
 */
+
+/*
+//Constructor functions and the new Operator
+
+
+//The constructor function is the similar to a regular function the only difference is constructor function call with the 'new' keyword
+//constvar convention start with capital letter 
+//no arrow function and this keyword
+const Person = function(firstName, birthYear){
+
+    //instance property
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+
+};
+
+const keshav = new Person('Keshav', 2002);
+console.log(keshav);
+
+//Behind the Scene
+//1. A new {object} is created
+//2. function is called, this keyword is the new empty {}
+//3. {} linked to the prototype 
+//4. function automatically return {}
+
+//creating a other object 
+const shashank = new Person('Shashank', 2001);
+const kushal = new Person('Kushal', 2005);
+console.log(shashank, kushal);
+
+console.log(kushal instanceof Person); //true
+*/
