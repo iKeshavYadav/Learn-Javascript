@@ -2104,3 +2104,17 @@ person.fullName = 'Pintoo Yadav';
 console.log(person);
 console.log(person.fullName); //Pintoo Yadav
 */
+//Static Methods
+
+/*
+//The static keyword is used to define a static method for a class.
+//Static methods are called without creating object and cannot be called through a class instances (objects).
+//Static methods are often used to create utility functions for an application.
+
+class Mobile {
+    static disp(){
+        return 'Hey there 👋'
+    };
+};
+console.log(Mobile.disp());
+*/
