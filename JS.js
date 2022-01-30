@@ -2118,3 +2118,22 @@ class Mobile {
 };
 console.log(Mobile.disp());
 */
+
+//Object.create
+
+/*
+const PersonProto = {
+    calcAge() {
+        console.log(2037 - this.birthYear);
+    },
+};
+
+//will create a new object 'keshav' with the 'PersonProto' prototype
+const keshav = Object.create(PersonProto);
+console.log(keshav);
+//adding properties to the object 
+keshav.name = 'Keshav';
+keshav.birthYear = 2002;
+//calling
+keshav.calcAge();
+*/
