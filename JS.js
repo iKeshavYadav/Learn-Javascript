@@ -2055,3 +2055,52 @@ keshav.greet(); //Hey Keshav
 //3. Classes are the special type of functions behind the scene
 //4. Classes are executed in in strict mode
 */
+
+//Setters and Getters in objects
+
+/*
+const account = {
+    owner: 'Keshav',
+    movements: [200, 530, 120, 300],
+
+    //getter -> access properties
+    get latest(){
+        return this.movements.slice(-1).pop();
+    },
+
+    //setter -> change or mutate the proprties
+    set latest(mov){
+        this.movements.push(mov);
+    },
+}
+console.log(account.latest); //300
+
+account.latest = 50;
+console.log(account.movements); //[200, 530, 120, 300, 50]
+
+//or
+
+const person = {
+    firstName: 'Keshav',
+    lastName: 'Yadav',
+
+    //Getters
+    get fullName(){
+        return `${person.firstName} ${person.lastName}`;
+    },
+
+    //Setters
+    set fullName(value){
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    },
+};
+//getters
+console.log(person.fullName); //Keshav Yadav
+
+//setters
+person.fullName = 'Pintoo Yadav';
+console.log(person);
+console.log(person.fullName); //Pintoo Yadav
+*/
