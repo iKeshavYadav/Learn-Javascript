@@ -2137,3 +2137,41 @@ keshav.birthYear = 2002;
 //calling
 keshav.calcAge();
 */
+
+/*
+
+//Inheritance between "Classes": Constructor functions 
+const Person = function(firstName, birthYear){
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+};
+
+Person.prototype.calcAge = function(){
+    console.log(2037 - this.birthYear);
+};
+
+
+const Student = function(firstName, birthYear, course){
+
+    // this.firstName = firstName;
+    // this.birthYear = birthYear;
+    //or
+    //Inheriting
+    Person.call(this, firstName, birthYear);
+    this.course = course;
+};
+
+// Linking prototype
+Student.prototype = Object.create(Person.prototype);
+
+Student.prototype.introduce = function(){
+    console.log(`My name is ${this.firstName} and, I study ${this.course}`);
+};
+
+const keshav = new Student('Keshav', 2002, 'Computer Science');
+keshav.introduce();
+keshav.calcAge();
+
+console.log(keshav.__proto__);
+console.log(keshav.__proto__.__proto__);
+*/
