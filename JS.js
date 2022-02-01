@@ -2175,3 +2175,84 @@ keshav.calcAge();
 console.log(keshav.__proto__);
 console.log(keshav.__proto__.__proto__);
 */
+
+//Inheritance between Classes : ES6 Classes
+
+/*
+class employee{
+    constructor(name){
+        console.log("Constructor : Employee " + name);
+    };
+};
+
+class manager extends employee{
+    constructor(name){
+        super();
+        console.log("Constructor : Manager " + name)
+    };
+};
+
+const a = new manager("Keshav Yadav");
+*/
+
+//and
+
+/*
+class PersonCl {
+    constructor(fullName, birthYear){
+       this.fullName = fullName;
+       this.birthYear = birthYear; 
+    };
+    
+    //Instance methods
+    calcAge(){
+        console.log(2037 - this.birthYear);
+    };
+
+    greet(){
+    console.log(`Hey ${this.firstName}`);
+    };
+
+    get age(){
+        return 2037 - this.birthYear;
+    };
+
+    set fullName(name){
+        if(name.includes(' ')) this._fullName = name;
+        else alert(`${name} is not a full name!`);
+    };
+
+    get fullName(){
+        return this._fullName;
+    };
+
+    //static method
+    static hey(){
+        console.log('Hey there 👋');
+    };
+
+};
+
+//extends keywords let's you help in inherit
+class StudentsCl extends PersonCl {
+    constructor(fullName, birthYear, course){
+
+        //super keyword will check if any method exist in super class or not
+        super(fullName, birthYear);  
+        this.course = course;
+    };
+
+    introduce(){
+        console.log(`My name is ${this.fullName} and I study ${this.course} `);
+    };
+
+    //This will overwrite the previous method
+    calcAge(){
+        console.log(`I'm ${2037 - this.birthYear} years ald, but as a student I feel more like ${2037- this.birthYear + 10}`);
+    };
+};
+
+const satyam = new StudentsCl('Satyam Tiwari', 2003, ' Computer Science');
+satyam.introduce();
+satyam.calcAge();
+*/
