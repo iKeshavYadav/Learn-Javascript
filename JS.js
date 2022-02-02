@@ -2288,3 +2288,44 @@ satyam.init('Satyam', 2002, 'Computer Science');
 satyam.introduce();
 satyam.calcAge();
 */
+
+
+//Encapsulation in JS
+
+/*
+//Encapsulation is defined as the wrapping up of data (var, instances, methods) under a single unit (Class)
+
+//Wrapping up in single unit - Class
+class Student{
+
+    //defining variables
+    constructor(){
+        let name, marks;
+    };
+
+    //methods
+    getName(){
+        return this.name;
+    };
+
+    setName(name){
+        this.name = name;
+    };
+
+    getMarks(){
+        return this.marks;
+    };
+
+    setMarks(marks){
+        this.marks = marks;
+    };
+};
+
+//object of class
+let stu = new Student();
+stu.setName('Keshav');
+stu.setMarks(90);
+console.log(stu);
+
+console.log(stu.getName(), stu.getMarks());
+*/
