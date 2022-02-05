@@ -2329,3 +2329,22 @@ console.log(stu);
 
 console.log(stu.getName(), stu.getMarks());
 */
+
+//Synchronous in JS
+//Synchronous code is executed line by line - Most code is synchronous
+//Each line of code waits for previous line to finish
+
+//Asynchronous in JS 
+//Asynchronous code is executed after a task that runs in the "background" finishes;
+//Asynchronous code is non-blocking;
+//Execution doesn't wait for an asynchronous task to finish its work
+//Callback function alone do NOT make code asynchronous!
+
+
+//AJAX in JS - Asynchronous Javascript And XML 
+//AJAX - Allows us to communicate with remote web servers in an asynchronous way. With AJAX call, we can request data from web servers dynamically.
+
+
+//API - Application Promgramming Inteface
+//Piece of software that can be used by another piece of software, in order to allow application to talk to each other.
+//There are be many types of API in web development - DOM API | Geolocation API | Own Class API | Online API
