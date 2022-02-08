@@ -2348,3 +2348,19 @@ console.log(stu.getName(), stu.getMarks());
 //API - Application Promgramming Inteface
 //Piece of software that can be used by another piece of software, in order to allow application to talk to each other.
 //There are be many types of API in web development - DOM API | Geolocation API | Own Class API | Online API
+
+/*
+//AJAX Calling - XMLHttpRequest
+
+//method object 
+const request = new XMLHttpRequest();
+
+//calling API (Source:https://restcountries.com/)
+request.open('GET', 'https://restcountries.com/v3.1/name/india');
+request.send();
+
+request.addEventListener('load', function(){
+  const data = JSON.parse(this.responseText);
+  console.log(data);
+});
+*/
