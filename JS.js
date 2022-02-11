@@ -2392,3 +2392,11 @@ const getCountryData = function (country) {
 };
 getCountryData('portugal');
 */
+/*
+//Chaining promises
+
+{
+    //code
+}
+
+*/
