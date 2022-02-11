@@ -2409,3 +2409,12 @@ getCountryData('portugal');
 }
 
 */
+
+/*
+//throwing error manually 
+
+{
+  //code
+}
+
+*/
