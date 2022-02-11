@@ -2433,3 +2433,29 @@ Promise.resolve('Resolved promise 2').then(res => {
 
 console.log('Test end') 
 */
+
+/*
+//Error handling with try-catch-finally
+
+let alien = 'Keshav Yadav';
+if (alien !=undefined){
+//   throw new Error('This is not undefined');
+}
+else{
+  consol.log('This is undefined');
+}
+
+try{
+  console.log('We are inside try block');
+  functionAlien(); //funct not exist
+
+} catch(error1){
+  console.log(error1); //ReferenceError: functionAlien is not defined at script.js:20:3
+  console.log(error1.message); //functionAlien is not defined
+  console.log(error1.name); //ReferenceError
+  console.log('Are you okay');
+
+} finally {
+    console.log('Finally we will run this');
+}
+*/
