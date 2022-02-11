@@ -2400,3 +2400,12 @@ getCountryData('portugal');
 }
 
 */
+
+/*
+//handling rejected promises
+
+{
+    //code
+}
+
+*/
