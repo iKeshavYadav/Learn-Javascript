@@ -2364,3 +2364,13 @@ request.addEventListener('load', function(){
   console.log(data);
 });
 */
+
+/*
+//Promises and the Fetch API
+
+//promise: An obj that is used as a placeholder for the future results of an asynchronous operation
+//Promise: A container for a future value.
+
+const request = fetch('https://restcountries.eu/rest/v2/name/portugal');
+console.log(request);
+*/
