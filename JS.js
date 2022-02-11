@@ -2374,3 +2374,21 @@ request.addEventListener('load', function(){
 const request = fetch('https://restcountries.eu/rest/v2/name/portugal');
 console.log(request);
 */
+
+/*
+//Consuming promises
+//The code has bugs - pending for correction
+const getCountryData = function (country) {
+    fetch(`https://restcountries.eu/rest/v2/name/$
+    {country}`).then(function (
+        response
+    ) {
+        console.log(response);
+        return response.json();
+
+    }).then(function(data){
+        console.log(data);
+    });
+};
+getCountryData('portugal');
+*/
