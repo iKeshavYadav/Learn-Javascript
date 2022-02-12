@@ -2459,3 +2459,32 @@ try{
     console.log('Finally we will run this');
 }
 */
+
+/*
+//Exporting and Importing Modules in ES6
+
+
+//Importing Module
+console.log('Importing Module');
+// import './shoppingCartModule.js';
+// import {addToCart, totalPrice as price, tq} from './shoppingCartModule.js'
+// addToCart('bread', 5);
+// console.log(price, tq);
+
+//import everything
+// import * as ShoppingCart from './shoppingCartModule.js'
+// ShoppingCart.addToCart('bread', 5)
+// console.log(ShoppingCart.totalPrice);
+
+//default export
+// import add, {addToCart, totalPrice as price, tq} from './shoppingCartModule.js'
+// import add from './shoppingCartModule.js'
+import add, {cart} from './shoppingCartModule.js'
+add('pizza', 2);
+add('bread', 5);
+add('apples', 4);
+
+console.log(cart);
+*/
+
+
