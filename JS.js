@@ -193,6 +193,9 @@ console.log("123 keshav") //123 keshav
 console.log(Number("123 keshav")) //NaN
 console.log(parseInt("123 keshav")) //123 -> it except str and try to convert into Number
 console.log(parseInt("N123 keshav")) //NaN -> character in start will not work
+
+//convert number to float
+console.log(parseFloat(25).toFixed(2));
 */
 
 //Arithmetic operators
