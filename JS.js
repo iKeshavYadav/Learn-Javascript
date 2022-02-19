@@ -2490,4 +2490,100 @@ add('apples', 4);
 console.log(cart);
 */
 
+//Regular expression (RegExp) in JS
+
+/*
+console.log('Keshav'); //String literal
+console.log(`Keshav`); //Backtick literal
+
+let reg = /keshav/; //Regular expression in JS
+console.log(reg); // /keshav/
+console.log(reg.source); //keshav
+*/
+
+//Functions used to match expressions (term)
+
+//1. exec() - This function will return an array for match or null for no match
+
+/*
+let reg = /keshav/ //will match the first match
+let stringOne = 'This is great code with keshav and also keshav bhai';
+
+let result = reg.exec(stringOne);
+console.log(result); // ['keshav', index: 24, input: 'This is great code with keshav and also keshav bhai', groups: undefined]
+
+console.log(result.index); //24
+console.log(result.input); //This is great code with keshav and also keshav bhai
+*/
+
+/*
+//global ('g') flag
+let reg = /keshav/g;  // 'g' flag will match in entire (global) paragrapgh
+let stringOne = 'This is great code with keshav and also keshav bhai';
+
+let result = reg.exec(stringOne);
+console.log(result); // ['keshav', index: 24, input: 'This is great code with keshav and also keshav bhai', groups: undefined]
+
+console.log(reg.exec(stringOne)); //['keshav', index: 40, input: 'This is great code with keshav and also keshav bhai', groups: undefined]
+
+console.log(reg.exec(stringOne)); //null
+//can use multiple exec() with global ('g') flag
+
+*/
+
+/*
+let reg = /keshav/i;  // 'i' means case-insensitive
+let stringOne = 'This is great code with keshaV and also keSHav bhai';
+
+let result = reg.exec(stringOne);
+console.log(result); // ['keshaV', index: 24, input: 'This is great code with keshav and also keshav bhai', groups: undefined]
+*/
+
+//2. test() - Returns true or false
+
+/*
+let reg = /keshav/
+let stringOne = 'This is great code with keshav';
+let result = reg.test(stringOne);
+console.log(result); //true
+
+let stringTwo = 'This is great code with satyam';
+result2 = reg.test(stringTwo);
+console.log(result2); //false
+*/
+
+//3. match() - It will return an array of results or null 
+
+// let result reg.match(stringOne) //wrong syntax
+
+/*
+let reg = /keshav/g
+let stringOne = 'This is great code with keshav and also keshav bhai';
+
+let result = stringOne.match(reg);
+console.log(result); // [ 'keshav', 'keshav' ]
+*/
+
+//4. search() - Returns index of first match else -1 
+
+/*
+let name = /keshav/;
+let stringOne = 'This is great code with keshav';
+let result = stringOne.search(name);
+console.log(result); //24
+
+reg = /keshav/
+let stringTwo = 'This is great code with satyam';
+result = stringTwo.search(reg);
+console.log(result); // -1 
+*/
+
+//4. replace() - Returns new replaced string with all the replacements (if no flag is given, first match will be replaced)
+
+/*
+let reg = /keshav/
+let stringOne = 'This is great code with keshav'
+let result = stringOne.replace(reg, 'satyam');
+console.log(result);
+*/
 
