@@ -2578,7 +2578,7 @@ result = stringTwo.search(reg);
 console.log(result); // -1 
 */
 
-//4. replace() - Returns new replaced string with all the replacements (if no flag is given, first match will be replaced)
+//5. replace() - Returns new replaced string with all the replacements (if no flag is given, first match will be replaced)
 
 /*
 let reg = /keshav/
