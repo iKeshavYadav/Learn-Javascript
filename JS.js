@@ -53,6 +53,62 @@ console.log(myName.join(' ')); //join() method creates and returns a new string 
 
 */
 
+//More on Strings in JS
+
+/*
+const firstName = 'Keshav';
+const lastName = 'Yadav';
+const fullName = firstName + lastName;
+
+//concat()
+// console.log(firstName.concat(lastName)); //Keshav Yadav
+
+//includes()
+// console.log(fullName.includes('Keshav')); //true
+
+//charAt()
+// console.log(firstName.charAt(0)); //K
+
+//endsWith()
+// console.log(lastName.endsWith('dav')) //true
+
+//length()
+// console.log(firstName.length); //7
+
+//indexOf()
+// console.log(firstName.indexOf('a')) //4
+
+//repeat()
+// console.log(firstName.repeat(2)); //KeshavKeshav
+// console.log(firstName.repeat(2) + lastName) //KeshavKeshavYadav
+
+//replace()
+// console.log(firstName.replace('Keshav', 'Aradhna ') + lastName)
+
+//slice()
+// console.log(firstName.slice(2)); //shav
+// console.log(firstName.slice(1, 4)); //esh
+
+//split()
+// console.log(firstName.split('s')); //[ 'Ke', 'hav' ]
+// console.log(firstName.split('')); //[ 'K', 'e', 's', 'h', 'a', 'v' ]
+
+//startsWith()
+// console.log(firstName.startsWith('Kes')) //true
+
+//substr()
+// console.log(firstName.substr(1)); //eshav
+// console.log(firstName.substr(1,4)) //esha
+
+//substring()
+// console.log(firstName.substring(1)); //eshav
+// console.log(firstName.substring(1, 4)); //esh
+
+//trim() - removes whitespaces from start and end (also: trimLeft() | trimRight())
+// console.log(' Keshav  '.length);//9
+// console.log(' Keshav  '.trim().length); //6
+*/
+
 //data types
 
 //costants
