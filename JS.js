@@ -2494,29 +2494,63 @@ console.log('Test end')
 */
 
 /*
-//Error handling with try-catch-finally
+//Error Handling in JS
 
-let alien = 'Keshav Yadav';
-if (alien !=undefined){
-//   throw new Error('This is not undefined');
-}
-else{
-  consol.log('This is undefined');
-}
+//1. Syntax Error (Parsing Error) - When a syntax error occurs in JavaScript
+
+//2. Runtime Error (Exception) - error occurs during execution
+
+//3. Logical Error - error occurs because of mistake in the code's logic
+
+// Try, Catch, throw and finally
+
+//try{} - Let you test a block of code
+//catch{} - let you handle the error
+//throw{} - let you throw custom error
+//finally{} - Will always run if error or not, let you execute the code after trying catch regardless of the result
+
+/*
+
+//try{} | catch{} | finally{}
+try{
+  
+  console.log('Start of try runs');
+  unicycle; //error code
+  console.log('End of try runs -- never reached');
+  
+  
+}catch(err){
+  
+  console.log('Error has occured: ' + err);
+  
+}finally{
+  
+  console.log('This is always run');
+  
+};
+
+console.log('...Then the execution continues');
+*/
+
+
+/*
+//throw{}
+
+let json = '{"age": 30}';
 
 try{
-  console.log('We are inside try block');
-  functionAlien(); //funct not exist
-
-} catch(error1){
-  console.log(error1); //ReferenceError: functionAlien is not defined at script.js:20:3
-  console.log(error1.message); //functionAlien is not defined
-  console.log(error1.name); //ReferenceError
-  console.log('Are you okay');
-
-} finally {
-    console.log('Finally we will run this');
-}
+  
+  let user = JSON.parse(json);
+  if(!user.name){
+    throw new Error('Incomplete data: no name');
+  }
+  
+  console.log(user.name);
+  
+  
+}catch(e){
+  console.log('JSON Error: ' + e.message);
+};
 */
 
 /*
